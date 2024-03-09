@@ -1,0 +1,13 @@
+:root{
+    --color-title: #222;
+    
+}
+
+header *{
+    text-align: center;
+    color: var(--color-title);
+    line-height: 9rem;
+}
+hr{
+    border: solid .1rem #e5e2e2;
+}
