@@ -67,4 +67,42 @@ document.addEventListener("DOMContentLoaded", (e) => {
   
     //console.table(country)
     console.log("Gouvernement : "+country.gouvernement.type)
+
+    //chainage optionnel
+    interface Person {
+        name: string;
+        age: any;
+        address?: {
+            city?: string;
+        };
+    }
+    
+    const person: Person = {
+        name: 'John Doe',
+        age: 30
+        // address est facultatif ou undefined
+    };
+
+    person?.age?? console.log("pas d'age")
+    
+    // Accès à la propriété city en utilisant le chaînage optionnel (?.)
+    const city = person.address?.city;
+    
+    // Affichage de la ville si elle est définie, sinon affichage d'un message par défaut
+    console.log(city !== undefined ? city : "Ville non définie");
+
+    //date
+    interface Mydate{
+        printdate: any;
+        elements:any;
+    }
+    const date: Mydate = {
+        printdate: new Date().getFullYear(),
+        elements: document.querySelector("time")
+        // address est facultatif ou undefined
+    };
+    date.elements.innerText = date.printdate
+   
+    
+    
 })

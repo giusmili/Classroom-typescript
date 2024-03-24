@@ -1,5 +1,6 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", (e) => {
+    var _a, _b;
     console.log(e.target);
     console.log("Hello typescript et js");
     const nom = "Typescript";
@@ -40,4 +41,20 @@ document.addEventListener("DOMContentLoaded", (e) => {
     };
     //console.table(country)
     console.log("Gouvernement : " + country.gouvernement.type);
+    const person = {
+        name: 'John Doe',
+        age: 30
+        // address est facultatif ou undefined
+    };
+    (_a = person === null || person === void 0 ? void 0 : person.age) !== null && _a !== void 0 ? _a : console.log("pas d'age");
+    // Accès à la propriété city en utilisant le chaînage optionnel (?.)
+    const city = (_b = person.address) === null || _b === void 0 ? void 0 : _b.city;
+    // Affichage de la ville si elle est définie, sinon affichage d'un message par défaut
+    console.log(city !== undefined ? city : "Ville non définie");
+    const date = {
+        printdate: new Date().getFullYear(),
+        elements: document.querySelector("time")
+        // address est facultatif ou undefined
+    };
+    date.elements.innerText = date.printdate;
 });
