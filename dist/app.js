@@ -57,4 +57,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // address est facultatif ou undefined
     };
     date.elements.innerText = date.printdate;
+    const appareil = {
+        device: "Phone"
+    };
 });

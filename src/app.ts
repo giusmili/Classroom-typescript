@@ -102,6 +102,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
         // address est facultatif ou undefined
     };
     date.elements.innerText = date.printdate
+    interface Using{
+        device : String
+    }
+    const appareil : Using = {
+        device : "Phone"
+    }
    
     
     
