@@ -103,10 +103,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
     };
     date.elements.innerText = date.printdate
     interface Using{
-        device : String
+        device : String,
+        dates: any
     }
     const appareil : Using = {
-        device : "Phone"
+        device : "Phone",
+        dates : new Date().getFullYear()
+
     }
    
     

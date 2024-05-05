@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     };
     date.elements.innerText = date.printdate;
     const appareil = {
-        device: "Phone"
+        device: "Phone",
+        dates: new Date().getFullYear()
     };
 });
