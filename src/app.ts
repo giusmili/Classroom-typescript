@@ -111,6 +111,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
         dates : new Date().getFullYear()
 
     }
+
+    interface Persons{
+        nom: string;
+        prenom?: string; /* si c'est optionnel ajouter "?" */
+
+    }
+
+    const gen : Persons = {
+        nom: "Heisenberg",
+        prenom: "Walter"
+    }
    
     
     

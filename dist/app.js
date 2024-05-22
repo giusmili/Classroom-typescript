@@ -61,4 +61,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
         device: "Phone",
         dates: new Date().getFullYear()
     };
+    const gen = {
+        nom: "Heisenberg",
+        prenom: "Walter"
+    };
 });
