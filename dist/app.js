@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     const version = 6;
     const title = document.querySelector("title");
     const lang = document.querySelector("html");
+    const list = document.querySelector("figure figcaption");
     console.log(lang.getAttribute("lang"));
     lang.setAttribute("lang", "fr");
     title.innerText = nom;
@@ -33,17 +34,17 @@ document.addEventListener("DOMContentLoaded", (e) => {
         capitale: "Rome",
         population: "59,11 millions (2021)",
         gouvernement: {
-            type: 'République, État unitaire, République constitutionnelle, République parlementaire'
+            type: "République, État unitaire, République constitutionnelle, République parlementaire",
         },
-        Indicatif_telephonique: '+39',
-        Superficie: '302 073 km²',
-        premier_ministre: "Melonie Giorgia"
+        Indicatif_telephonique: "+39",
+        Superficie: "302 073 km²",
+        premier_ministre: "Melonie Giorgia",
     };
     //console.table(country)
     console.log("Gouvernement : " + country.gouvernement.type);
     const person = {
-        name: 'John Doe',
-        age: 30
+        name: "John Doe",
+        age: 30,
         // address est facultatif ou undefined
     };
     (_a = person === null || person === void 0 ? void 0 : person.age) !== null && _a !== void 0 ? _a : console.log("pas d'age");
@@ -53,16 +54,25 @@ document.addEventListener("DOMContentLoaded", (e) => {
     console.log(city !== undefined ? city : "Ville non définie");
     const date = {
         printdate: new Date().getFullYear(),
-        elements: document.querySelector("time")
+        elements: document.querySelector("time"),
         // address est facultatif ou undefined
     };
     date.elements.innerText = date.printdate;
     const appareil = {
         device: "Phone",
-        dates: new Date().getFullYear()
+        dates: new Date().getFullYear(),
     };
     const gen = {
         nom: "Heisenberg",
-        prenom: "Walter"
+        prenom: "Walter",
     };
+    let el = document.createElement("ul");
+    list.appendChild(el);
+    let keys = Object.keys(gen);
+    el.innerHTML += `<li>
+    <strong>${keys[0].toUpperCase()}</strong> : ${gen.nom}
+        </li>
+    <li>
+         <strong>${keys[1].toUpperCase()}</strong> : ${gen.prenom}
+    </li>`;
 });

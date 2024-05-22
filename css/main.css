@@ -7,7 +7,13 @@ body{
     grid-template-rows: auto 1fr auto;
     height: 100vh;
     background: #f9fafb;
+    line-height: 1.6;
 }
+ul,ol{
+    list-style: none;
+    
+}
+
 header *{
     text-align: center;
     color: var(--color-title);
@@ -42,6 +48,14 @@ figure figcaption h2{
 figure figcaption p{
     margin: 0;
     text-align: justify;
+}
+figure figcaption li strong{
+    font-weight: normal;
+}
+figure figcaption ul{
+    line-height: normal;
+    padding: 1rem 0 0 0;
+   
 }
 footer{
     text-align: center;
