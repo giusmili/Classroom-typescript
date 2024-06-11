@@ -135,3 +135,34 @@ document.addEventListener("DOMContentLoaded", (e) => {
          <strong>${keys[1].toUpperCase()}</strong> : ${gen.prenom}
     </li>`;
 });
+/* exmeple par le mot clé type */
+ type Animal = String;
+ const animal : Animal = "Ours"
+
+/* exemple plus complexe */
+type Age = number;
+type Firstname = string;
+type Lastname = Firstname;
+
+const age : Age = 27;
+const lastname : Firstname = "Doe"
+console.log(age+' '+lastname)
+
+
+
+
+type Character = {
+    name: string;
+    life: number;
+    attack: number;
+    defense: number;
+};
+
+const myCharacter: Character = {
+    name: 'Warrior',
+    life: 100,
+    attack: 10,
+    defense: 5
+};
+
+console.table(myCharacter);

@@ -76,3 +76,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
          <strong>${keys[1].toUpperCase()}</strong> : ${gen.prenom}
     </li>`;
 });
+const animal = "Ours";
