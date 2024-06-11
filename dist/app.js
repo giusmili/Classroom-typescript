@@ -77,3 +77,13 @@ document.addEventListener("DOMContentLoaded", (e) => {
     </li>`;
 });
 const animal = "Ours";
+const age = 27;
+const lastname = "Doe";
+console.log(age + ' ' + lastname);
+const myCharacter = {
+    name: 'Warrior',
+    life: 100,
+    attack: 10,
+    defense: 5
+};
+console.table(myCharacter);
