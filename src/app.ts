@@ -166,3 +166,20 @@ const myCharacter: Character = {
 };
 
 console.table(myCharacter);
+
+/* chainage optionnel TS */
+type User = {
+  first_name : String;
+  name : String;
+  age : Number;
+};
+
+const personne: User = {
+  first_name: "Doe",
+  name: "John",
+  age: 35
+};
+console.log(personne.name)
+// Utilisation du chaînage optionnel
+const address = personne?.age ?? "Adresse indisponible";
+console.log(address)

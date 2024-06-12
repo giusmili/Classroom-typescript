@@ -1,4 +1,5 @@
 "use strict";
+var _a;
 document.addEventListener("DOMContentLoaded", (e) => {
     var _a, _b;
     console.log(e.target);
@@ -87,3 +88,12 @@ const myCharacter = {
     defense: 5
 };
 console.table(myCharacter);
+const personne = {
+    first_name: "Doe",
+    name: "John",
+    age: 35
+};
+console.log(personne.name);
+// Utilisation du chaînage optionnel
+const address = (_a = personne === null || personne === void 0 ? void 0 : personne.age) !== null && _a !== void 0 ? _a : "Adresse indisponible";
+console.log(address);
