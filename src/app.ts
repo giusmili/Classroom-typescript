@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
         fiction: "Space 1999",
         location: "Moon base Alpha",
     };
-
+   
     let characteres:any = [Persona_1, Persona_2];
     characteres.push()
     //console.log(characteres)
