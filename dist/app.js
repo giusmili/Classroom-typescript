@@ -24,4 +24,5 @@ document.addEventListener("DOMContentLoaded", (e) => {
     /* itération des objets dans le tableau */
     //xcharacteres.forEach((element:any) => console.log(element.first_name));
     characteres.map((element) => console.log(element.last_name));
+    /* modifier dans le DOM */
 });
